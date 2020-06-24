@@ -1,27 +1,27 @@
-<h1 align="center">GOSTACK 11 CHALLENGE 02</h1>
-<h1 align="center">Node.js concepts :rocket:</h1>
+<h1 align="center">GOSTACK 11 DESAFIO 02</h1>
+<h1 align="center">Conceitos Node.js :rocket:</h1>
 
 <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
 
 
 
-## 💻 About the Project
+## 💻 Sobre o Projeto
 <h4>
-  - Challenge 02: Node.js concepts
+  - Desafio 02: Conceitos Node.js
 </h4>
 
 <blockquote>
-This application stores repositories in a portfolio, which will allow the creation, listing, update and removal of the repositories, and also allow the repositories to receive "likes".
+Essa será uma aplicação para armazenar repositórios do portfólio, que irá permitir a criação, listagem, atualização e remoção dos repositórios, e além disso permitir que os repositórios possam receber "likes".
 </blockquote>
+
   
 
- ## 💻 Technologies
+ ## 💻 Tecnologias
 <h4>
-   
+
    - Node.js
 
    - Javascript
-</h4>
 
 
 
@@ -29,17 +29,17 @@ This application stores repositories in a portfolio, which will allow the creati
 ### Aplication rotes
 
 
-- ** `POST / repositories` **: The route should receive` title`, `url` and` techs` within the body of the request, with the URL being the link to the github of this repository. When registering a new project, it must be stored inside an object in the following format: `{id:" uuid ", title: 'Desafio Node.js', url: 'http: //github.com / ...' , techs: ["Node.js", "..."], likes: 0} `; Make sure the ID is a UUID, and always start likes as 0.
+- **`POST /repositories`**: A rota deve receber `title`, `url` e `techs` dentro do corpo da requisição, sendo a URL o link para o github desse repositório. Ao cadastrar um novo projeto, ele deve ser armazenado dentro de um objeto no seguinte formato: `{ id: "uuid", title: 'Desafio Node.js', url: 'http://github.com/...', techs: ["Node.js", "..."], likes: 0 }`; Certifique-se que o ID seja um UUID, e de sempre iniciar os likes como 0.
 
-- ** `GET / repositories` **: Route that lists all repositories;
+- **`GET /repositories`**: Rota que lista todos os repositórios;
 
-- ** `PUT / repositories /: id` **: The route should only change the` title`, `url` and` techs` of the repository that has the `id` equal to the` id` present in the parameters of the route;
+- **`PUT /repositories/:id`**: A rota deve alterar apenas o `title`, a `url` e as `techs` do repositório que possua o `id` igual ao `id` presente nos parâmetros da rota;
 
-- ** `DELETE / repositories /: id` **: The route must delete the repository with the` id` present in the route parameters;
+- **`DELETE /repositories/:id`**: A rota deve deletar o repositório com o `id` presente nos parâmetros da rota;
 
-- ** `POST / repositories /: id / like` **: The route must increase the number of likes of the specific repository chosen through the` id` present in the route parameters, at each call of this route, the number of likes must be increased by 1;
+- **`POST /repositories/:id/like`**: A rota deve aumentar o número de likes do repositório específico escolhido através do `id` presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
 
-## :memo: License
+## :memo: Licença
 
-This project is under the MIT license. 
-For more details visit: [LICENSE](.github/LICENSE.md).
+Esse projeto está sob a licença MIT. 
+Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
